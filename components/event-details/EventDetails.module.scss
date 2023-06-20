@@ -29,6 +29,9 @@
     }
     span {
         display: block;
+        &:last-child {
+            margin-top: 10px;
+        }
     }
   }
   &__description {
