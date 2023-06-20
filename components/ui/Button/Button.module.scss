@@ -1,0 +1,17 @@
+.button,
+.buttonHref {
+  padding: 10px 15px;
+  background: rgb(0, 0, 188);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttonHref {
+  &:hover {
+    text-decoration: underline;
+  }
+}
