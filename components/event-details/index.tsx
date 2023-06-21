@@ -1,6 +1,6 @@
 import { Event } from "../events/types";
-import Card from "../ui/Card";
-import classes from "./EventDetails.module.scss";
+import Card from "../ui/card";
+import classes from "./event-details.module.scss";
 
 export default function EventDetails(props: Event) {
   const { title, image, description, location, date, isFeatured } = props;

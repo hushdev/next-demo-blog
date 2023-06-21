@@ -1,6 +1,6 @@
-import EventItem from "./EventItem";
+import EventItem from "./event-item";
 import { Events } from "./types";
-import classes from "./Events.module.scss";
+import classes from "./events.module.scss";
 
 export default function EventList(props: Events) {
   return (

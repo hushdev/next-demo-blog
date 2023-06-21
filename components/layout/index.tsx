@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import classes from "./Layout.module.scss";
-import Header from "./Header";
-import Container from "../ui/Container";
+import classes from "./layout.module.scss";
+import Header from "./header";
+import Container from "../ui/container";
 
 interface LayoutProps {
   children: ReactNode;

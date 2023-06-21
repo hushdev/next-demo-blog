@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "../ui/Container";
-import classes from "./Header.module.scss";
+import Container from "../ui/container";
+import classes from "./header.module.scss";
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
           <Link href="/" className={classes.logo}>Next-demo-blog</Link>
           <ul>
             <li>
-              <Link href="/all-events">All events</Link>
+              <Link href="/events">All events</Link>
             </li>
           </ul>
         </nav>

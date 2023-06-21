@@ -1,7 +1,7 @@
 import { Event } from "./types";
-import Card from "../ui/Card";
-import classes from "./Events.module.scss";
-import Button from "../ui/Button";
+import Card from "../ui/card";
+import classes from "./events.module.scss";
+import Button from "../ui/button";
 
 export default function EventItem(props: Event) {
   const { id, title, image, description, location, date } = props;

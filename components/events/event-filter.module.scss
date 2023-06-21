@@ -1,0 +1,14 @@
+.filter {
+  margin: 0 0 25px 0;
+  display: flex;
+  justify-content: center;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      margin-right: 20px;
+    }
+  }
+}

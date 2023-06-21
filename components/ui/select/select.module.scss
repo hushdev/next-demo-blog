@@ -1,0 +1,14 @@
+.select_wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+    color: #6c6c6c;
+    margin-bottom: 5px;
+  }
+  select {
+    option {
+    }
+  }
+}

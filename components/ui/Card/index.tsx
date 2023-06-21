@@ -1,4 +1,4 @@
-import classes from "./Card.module.scss";
+import classes from "./card.module.scss";
 import { ReactNode } from "react";
 
 interface CardProps {

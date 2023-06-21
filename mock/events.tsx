@@ -41,6 +41,32 @@ export function getAllEvents() {
   return DUMMY_EVENTS;
 }
 
+export function getYears() {
+  const years = DUMMY_EVENTS.map((item) => item.date.slice(0, 4));
+
+  let uniqueYears = years.filter((element, index) => {
+    return years.indexOf(element) === index;
+  });
+
+  return uniqueYears;
+}
+
+export function getMonths() {
+  return [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+}
+
 export function getFilteredEvents(dateFilter: any) {
   const { year, month } = dateFilter;
 

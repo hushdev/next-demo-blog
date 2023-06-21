@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import classes from "./Container.module.scss";
+import classes from "./container.module.scss";
 
 interface ContainerProps {
   children: ReactNode;

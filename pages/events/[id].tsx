@@ -1,5 +1,5 @@
 import EventDetails from "@/components/event-details";
-import Container from "@/components/ui/Container";
+import Container from "@/components/ui/container";
 import { getEventById } from "@/mock/events";
 import { useRouter } from "next/router";
 
