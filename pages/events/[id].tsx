@@ -7,7 +7,6 @@ export default function SingleEventPage() {
   const router = useRouter();
   const eventId = String(router.query.id);
   const event = getEventById(eventId);
-  console.log(event);
 
   if (!event) return <Container>Nothing found</Container>;
 

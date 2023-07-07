@@ -1,6 +1,6 @@
 import EventList from "@/components/events";
 import { getAllEvents } from "@/mock/events";
-import classes from "@/pages/HomePage.module.scss";
+import classes from "@/pages/homePage.module.scss";
 import Container from "@/components/ui/container";
 import EventFilter from "@/components/events/event-filter";
 import { useRouter } from "next/router";

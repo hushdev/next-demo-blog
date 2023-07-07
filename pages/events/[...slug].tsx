@@ -1,9 +1,10 @@
 import EventList from "@/components/events";
 import { getFilteredEvents } from "@/mock/events";
-import classes from "@/pages/HomePage.module.scss";
+import classes from "@/pages/homePage.module.scss";
 import Container from "@/components/ui/container";
 import EventFilter from "@/components/events/event-filter";
 import { useRouter } from "next/router";
+import Button from "@/components/ui/button";
 
 export default function FilteredEvents() {
   const router = useRouter();
@@ -18,37 +19,28 @@ export default function FilteredEvents() {
     router.push(url);
   };
 
-  if (
-    !year ||
+  const incorrectUrl = (!year ||
     !month ||
     isNaN(year) ||
     isNaN(month) ||
     month < 1 ||
-    month > 12
-  ) {
-    return (
-      <Container>
-        <EventFilter onFilter={filterHandler} />
-        <p>Incorrect URL</p>
-      </Container>
-    );
-  }
+    month > 12 ||
+    events.length === 0) && (
+    <>
+      <p>Nothing found or incorrect URL 😕</p>
+      <Button href="/events">Go to all events</Button>
+    </>
+  );
 
-  if (events.length === 0) {
-    return (
-      <div className={classes.home}>
-        <EventFilter onFilter={filterHandler} />
-        <p>Nothing found</p>
-      </div>
-    );
-  }
+  const eventList = events.length > 0 && <EventList events={events} />;
 
   return (
     <div className={classes.home}>
       <Container>
         <h1>Filtered events</h1>
         <EventFilter onFilter={filterHandler} />
-        <EventList events={events} />
+        {incorrectUrl}
+        {eventList}
       </Container>
     </div>
   );

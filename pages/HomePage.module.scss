@@ -1,10 +1,13 @@
-@use '@/styles/animations.scss';
+@use "@/styles/animations.scss";
 
 .home {
-  animation: fade-to-top .5s forwards ease;
-  
+  animation: fade-to-top 0.5s forwards ease;
+  text-align: center;
   h1 {
     text-align: center;
     margin: 0 0 30px 0;
+  }
+  p {
+    margin-bottom: 20px;
   }
 }
