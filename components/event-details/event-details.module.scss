@@ -1,5 +1,9 @@
+@use '@/styles/animations.scss';
+
 .details {
   position: relative;
+  animation: fade-to-top .5s forwards ease;
+
   &__heading {
     padding: 70px 0 120px 0;
     background: #00829f;

@@ -11,3 +11,7 @@ export type Event = {
   image: string;
   isFeatured: boolean;
 };
+
+export type EventFilterProps = {
+  onFilter: (year: number | null, month: number | null) => void;
+};

@@ -1,4 +1,7 @@
+@use '@/styles/animations.scss';
+
 .home {
+  animation: fade-to-top .5s forwards ease;
   h1 {
     text-align: center;
     margin: 0 0 30px 0;
